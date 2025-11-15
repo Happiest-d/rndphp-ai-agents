@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Pest’датый фреймворк для тестирования</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="shower/themes/rndphp/styles/styles.css" rel="stylesheet"/>
+</head>
+<body class="shower list">
+<section class="slide preview">
+<div class="lines"></div>
+<div class="stripes"></div>
+<h1>Pest’датый фреймворк для тестирования</h1>
+<p>Забанов Александр</p>
+</section>
+<section class="slide">
+<h2>О себе</h2>
+<h3>Забанов Александр</h3>
+<ul>
+<li>Руководитель направления Backend в комании Веб<span style="color:#7927e0">/</span>Практик</li>
+<li>9+ лет в backend</li>
+<li><b>PHP</b> : Bitrix, Laravel, Symfony, Yii2</li>
+<li><b>NodeJS</b> : Nest, Express</li>
+</ul>
+</section>
+<section class="slide clear">
+<img class="cover" src="pictures/17.png"/>
+</section>
+<!--section class="slide">
+    <h2>Что обсудим?</h2>
+    <ul>
+        <li>Для чего нужны автотесты?</li>
+        <li>Что такое Pest?</li>
+        <li>Синтаксический сахар</li>
+        <li>"Альтернативные" тесты</li>
+        <li>TODOS</li>
+        <li>Выводы</li>
+    </ul>
+</section-->
+<section class="slide">
+<h2 class="shout shrink">Кто пишет тесты?</h2>
+</section>
+<section class="slide">
+<h2 class="shout shrink">У кого больше 50%?</h2>
+</section>
+<section class="slide">
+<h2>Почему люди не пишут тесты</h2>
+<ul>
+<li class="next">Заблуждение, что экономия на тестах = экономии бюджета проекта</li>
+<li class="next">Нет компетенций</li>
+<li class="next">Лень ;)</li>
+</ul>
+</section>
+<section class="slide">
+<h2>Для чего нужны автотесты</h2>
+<ul>
+<li class="next">Обеспечение качества кода</li>
+<li class="next">Экономия времени и ресурсов</li>
+<li class="next">Уверенность при изменениях</li>
+<li class="next">Поддержание стабильности и надежности</li>
+<li class="next">Упрощение поиска ошибок</li>
+<li class="next">Повышение производительности команды</li>
+</ul>
+</section>
+<section class="slide">
+<h2 class="shout shrink">Какие у нас есть инструменты?</h2>
+</section>
+<section class="slide">
+<h2>PHPUnit</h2>
+<h4>Популярный фреймворк для модульного тестирования на языке PHP
+    </h4>
+<div style="text-align: center">
+
+</div>
+</section>
+<section class="slide">
+<h2 class="">selenium -&gt; playwright</h2>
+
+</section>
+<section class="slide">
+<h2 class="shout shrink">PEST</h2>
+</section>
+<section class="slide">
+<h2>Pest</h2>
+<span><b>"Фреймворк для тестирования, ориентированный на простоту и тщательно разработанный для того, чтобы вернуть радость тестирования на PHP."</b><br/> © Контент-менеджер Pest
+    </span>
+<img class="place" src="pictures/1.png" style="padding-top: 250px" width="75%"/>
+</section>
+<section class="slide">
+<h2>Сообщество Pest</h2>
+<ul>
+<li>Активная поддержка сообщества.</li>
+<li>Частые обновления (даже слишком)</li>
+<li>Поддержка php 8.4 уже в тесте</li>
+</ul>
+<img class="place" src="pictures/2.png" style="padding-top: 250px;padding-right: 355px;" width="50%"/>
+<img class="place" src="pictures/3.png" style="padding-top: 90px;    padding-left: 525px;" width="30%"/>
+</section>
+<section class="slide">
+<h2>Основные фишки Pest</h2>
+<ul style="
+    font-size: 20px;
+">
+<li class="next">Синтаксис позволяющий писать тесты <mark>быстрее</mark></li>
+<li class="next">
+            "Мультитул"
+            <ul>
+<li class="next">Архитектурные тесты</li>
+<li class="next">Стресс-тесты</li>
+<li class="next">Мутационное тестирование</li>
+<li class="next">TODOS</li>
+</ul>
+</li>
+<li class="next">Расширяемость через плагины</li>
+<li class="next">Совместимость с PHPUnit</li>
+<!--li class="next">Min PHP 8.2</li>
+        <li class="next">Если вы адепт ларавел :)
+            <img src="pictures/4.png" width="50%" class="place" style="padding-top: 320px;    padding-left: 330px;"/>
+        </li--->
+</ul>
+</section>
+<section class="slide">
+<h2>Синтаксический сахар</h2>
+<div>
+
+<br/><span style="padding-left: 170px;">PHPUnit</span>
+</div>
+<div style="
+    margin-top: -290px;
+    margin-left: 495px;
+">
+
+<br/><span style="padding-left: 135px;">Pest</span>
+</div>
+</section>
+
+<section class="slide">
+<h2>Плагины для редакторов кода</h2>
+<ul>
+<li class="next">Запуск из контекста IDE
+    <img class="place" src="pictures/7.png" style="padding-left: 420px;margin-top: -50px;" width="30%"/></li>
+<li class="next">Красивая иконка у файла в IDE :)</li>
+<li class="next">Шаблоны
+    <img class="place" src="pictures/8.png" style="padding-top: 245px;padding-right: 400px;" width="45%"/></li>
+</ul>
+</section>
+<section class="slide">
+<h2>Наименование</h2>
+<div>
+<b>Раньше:</b> [ТестирумыйМетод]_[Сценарий]_[ОжидаемыйРезультат]<br/>
+<b>Пример:</b>
+
+</div>
+<hr/>
+<div>
+<b>Сейчас:</b> [Любой текст]<br/>
+<b>Пример:</b>
+
+</div>
+</section>
+<section class="slide">
+<h2>Группы</h2>
+    Для разделения единиц поведения
+    <br/>
+
+<hr/>
+    Запуск
+    <br/>
+
+</section>
+<section class="slide">
+<h2>Skip</h2>
+    Если вам нужно временно отключить тест.
+
+    
+</section>
+<section class="slide">
+<h2>Хуки</h2>
+
+</section>
+<section class="slide">
+<h2>Mocking</h2>
+    Нужно будет установить библиотеку для моков. Pest рекомендует <b>mockery</b><br/>
+
+</section>
+<section class="slide">
+<h2>Higher Order Testing</h2>
+    Удобный билдер, в котором доступны как методы Pest так и PHPUnit<br/>
+<br/>
+    субъект-действие-объект
+</section>
+<section class="slide">
+<h2 class="shout shrink" style="
+    font-size: 58px;
+">Другие виды тестирования в Pest</h2>
+</section>
+<section class="slide">
+<h2>Другие виды тестирования в Pest</h2>
+<ul>
+<li>Архитектурные тесты</li>
+<li>Стресс-тестирование</li>
+<li>Type Coverage</li>
+<li>Mutation Testing</li>
+<li>Snapshot</li>
+</ul>
+</section>
+<section class="slide">
+<h2>Архитектурные тесты</h2>
+    Проверяют, соответствует ли ваше приложение набору архитектурных правил
+    
+<ul style="margin-top: -370px;margin-left: 400px;font-size: 16px;">
+<li><b>toUseStrictTypes()</b> метод можно использовать для обеспечения того, чтобы все файлы в заданном пространстве имен использовали строгие типы.</li>
+<li><b>toBeClasses()</b> метод можно использовать для того, чтобы гарантировать, что все файлы в заданном пространстве имен являются классами.</li>
+<li><b>toOnlyBeUsedIn()</b> позволяет вам ограничить использование определенного класса или набора классов только определенными частями вашего приложения.</li>
+<li>...</li>
+</ul>
+</section>
+<section class="slide">
+<h2>Архитектурные тесты: Пресеты</h2>
+    Уже готовые наборы правил <br/>
+
+</section>
+<section class="slide">
+<h2>Стресс-тестирование</h2>
+    *Доп плагин с К6 под капотом<br/>
+<br/>
+<b>Флаги</b><br/>
+--duration<br/>
+--concurrenc<br/>
+Http-флаги (--patch --put --post --options --get)
+</section>
+<section class="slide">
+<h2>Стресс-тестирование: Функции</h2>
+
+</section>
+<section class="slide">
+<h2>Стресс-тестирование: Результаты</h2>
+<ul>
+<li>Длительность запроса</li>
+<li>Количество запросов</li>
+<li>Оценка (кол-во запрос в секунду)</li>
+<li>Количество неудачных запросов</li>
+<li>Скорость невыполненных запросов</li>
+<li>и тп</li>
+<img class="place" src="pictures/18.png" style="
+    padding-left: 425px;
+" width="45%"/>
+</ul>
+</section>
+<section class="slide">
+<h2>Покрытие</h2>
+<div class="next">
+<img class="place" src="pictures/16.png" width="75%"/>
+</div>
+</section>
+<section class="slide">
+<h2>Type Coverage</h2>
+    Mетрика, используемая для измерения процента типизации кода<br/>
+<span style="
+    position: absolute;
+    padding-left: 345px;
+    font-size: 18px;
+">Ставим плагин <b>pestphp/pest-plugin-type-coverage</b><br/></span>
+
+<hr/>
+<div class="next">
+<img class="place" src="pictures/15.png" style="padding-top: 340px;padding-right: 515px;" width="40%"/>
+<span style="
+    padding-left: 435px;font-size: 14px;
+">Пример: <b>pa31</b> означает, что отсутствует тип параметра функции в строке 31</span>
+</div>
+</section>
+<section class="slide">
+<h2>Mutation Testing</h2>
+<span>Требуется XDebug 3.0+ или PCOV .</span><br/>
+<br/>
+<ul style="
+    font-size: 14px;
+">
+<li class="next">В тестом файле указываем, какую часть кода охватывате тест. Например: covers(TodoController::class); // or mutates(TodoController::class</li>
+<li class="next">Запускаем тесты</li>
+<li class="next">Если тест все еще проходит против мутации, это означает, что тест не охватывает эту конкретную часть кода</li>
+<li class="next">Pest выведет мутацию и разницу кода</li>
+<li class="next">Пишем дополнительные тесты</li>
+<li class="next">Профит</li>
+</ul>
+</section>
+<section class="slide">
+<h2>Snapshot</h2>
+
+<br/>
+При первом запуске этого теста он создаст файл снимка - <b>tests/.pest/snapshots</b> с содержимым ответа. При следующем запуске теста он сравнит ответ с файлом снимка
+</section>
+<section class="slide">
+<h2>Snapshot: Для динамических данных</h2>
+
+</section>
+<section class="slide">
+<h2 class="shout shrink">Управление командой <br/>(TODOS)</h2>
+</section>
+<section class="slide">
+<h2>Файл конфигурации Pest.php</h2>
+
+<br/>
+<span>Пример конфигурации для встроенной функции интеграции в таск менеджер</span>
+</section>
+<section class="slide">
+<h2>Управление командой(TODOS)</h2>
+<span style="
+    font-size: 24px;
+">Тесты можно использовать для отслеживания хода выполнения ваших <b>todos/задач</b></span><br/>
+
+</section>
+<section class="slide">
+<h2>Назначение задач</h2>
+
+</section>
+<section class="slide">
+<h2>PR</h2>
+
+</section>
+<section class="slide">
+<h2>Issue</h2>
+
+</section>
+<section class="slide">
+<h2>Note</h2>
+
+</section>
+<section class="slide">
+<h2>Все вместе</h2>
+
+<img class="place" src="pictures/13.png" style="padding-left: 405px;" width="50%"/>
+</section>
+<section class="slide">
+<h2 class="shout shrink">Миграция с PHPUnit</h2>
+</section>
+<section class="slide">
+<h2>Стратегия миграции с PHPUnit</h2>
+<ol>
+<li>Оставляем старые PHPUnit-тесты как есть, рядом пиши новые на Pest</li>
+<li>Конвертируем PHPUnit-тесты в Pest</li>
+</ol>
+</section>
+<section class="slide">
+<h2>Должен жить лишь один</h2>
+<span>Обратной совместимости нет</span>
+<div class="next">
+<img class="place" src="pictures/5.png" style="padding-top: 90px; " width="80%"/></div>
+</section>
+<section class="slide">
+<h2>Миграция с PHPUnit</h2>
+<ol>
+<li>
+<span>Ставим <b>pestphp/pest-plugin-drift</b></span><br/>
+</li>
+<li>
+<span>Запускаем</span><br/>
+
+</li>
+<li>
+<span>Дрифтим</span><br/>
+<img class="place" src="pictures/14.png" style=" padding-top: 350px; padding-right: 628px;" width="23%"/>
+</li>
+</ol>
+</section>
+<section class="slide">
+<h2>Миграция с PHPUnit</h2>
+<div>
+<span>Работает только на 2ой версии Pest </span>
+<img class="place" src="pictures/6.png" style="padding-top: 200px;" width="35%"/>
+</div>
+</section>
+<section class="slide">
+<h2>Запуск</h2>
+<span>Запуск однопоточного тестирования</span><br/>
+
+<br/>
+<span>Запуск параллельного тестирования</span><br/>
+
+</section>
+<section class="slide">
+<h2>Скорость</h2>
+    PhpUnit: <b>00:02.51</b>
+<img class="place" src="pictures/12.png" style="padding-left: 200px;" width="50%"/>
+</section>
+<section class="slide">
+<h2>Скорость</h2>
+    Pest: <b>00:02.89</b>
+<img class="place" src="pictures/11.png" style="padding-left: 200px;" width="50%"/>
+</section>
+<section class="slide">
+<h2 class="shout shrink">Выводы</h2>
+</section>
+<section class="slide">
+<h2>Недостатки Pest</h2>
+<ul>
+<li>“Деградация” для опытных пользователей PHPUnit</li>
+<li>Меньшая зрелость по сравнению с PHPUnit</li>
+<li>Совместимость с инструментами\Ограничения в специализированных случаях</li>
+<li>Нет обратной миграции</li>
+<li>Где параметризованные тесты?</li>
+</ul>
+</section>
+<section class="slide">
+<h2>Когда стоит\не стоит ;( использовать Pest</h2>
+<div>
+<b>Когда стоит использовать Pest:</b>
+<ul>
+<li>Новые проекты</li>
+<li>Фокус на простоте и читаемости</li>
+<li>Маленькие и средние команды</li>
+<li>Laravel</li>
+</ul>
+</div>
+</section>
+<section class="slide">
+<h2>Когда стоит\не стоит ;(  использовать Pest</h2>
+<div>
+<b>Когда не стоит использовать Pest:</b>
+<ul>
+<li>Зависимость от специфических функций PHPUnit</li>
+<li>Командная устойчивость к изменениям</li>
+<li>Интеграция с определенными инструментами</li>
+<li>У вас аллергия на Laravel или на Тейлора
+                <img class="place" src="pictures/9.png" style="padding-top: 350px;padding-left: 200px;" width="10%"/></li>
+</ul>
+</div>
+</section>
+<section class="slide">
+<h2>Наш опыт</h2>
+<ul>
+<li>Не планируем останаливаться на достигнутом</li>
+<li>Новые проекты сразу на Pest</li>
+<li>Особенно если они будут на Laravel</li>
+</ul>
+</section>
+<section class="slide">
+<h2>Благодарности</h2>
+<ul>
+<li>Даниилу Кочетову (Back)</li>
+<li>Ивану Поддубному (СТО)</li>
+</ul>
+</section>
+<section class="slide">
+<h2 class="shout shrink">Вопросы?</h2>
+</section>
+<section class="slide">
+<pre class="place" style="line-height: 1; font-size: 19px; font-weight: bold; color: #2e3191; font-family: monospace;">
+ ______  __                                        __
+/\__  _\/\ \                                      /\ \
+\/_/\ \/\ \ \___       __          __     ___     \_\ \
+   \ \ \ \ \  _ `\   /'__`\      /'__`\ /' _ `\   /'_` \
+    \ \ \ \ \ \ \ \ /\  __/     /\  __/ /\ \/\ \ /\ \L\ \
+     \ \_\ \ \_\ \_\\ \____\    \ \____\\ \_\ \_\\ \___,_\
+      \/_/  \/_/\/_/ \/____/     \/____/ \/_/\/_/ \/__,_ /
+
+    </pre>
+</section>
+<div class="progress"></div>
+<script src="shower/shower.min.js"></script>
+<!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+</body>
+</html>
