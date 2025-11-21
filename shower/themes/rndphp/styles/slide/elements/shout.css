@@ -59,6 +59,10 @@
     font: bold 100px/1 'PT Sans Narrow', sans-serif;
 }
 
+.shower h2.shout.small {
+    font-size: 75px;
+}
+
 .shower h2.shout::after {
     border: none;
 }
