@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<title>AI-агенты в разработке: системный подход</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="shower/themes/rndphp/styles/styles.css" rel="stylesheet"/>
+</head>
+<body class="shower list">
+<section class="slide preview">
+<div class="lines"></div>
+<div class="stripes"></div>
+<h1>AI-агенты в разработке: системный подход</h1>
+<p>Денис Кукуреко</p>
+</section>
+
+<section class="slide">
+<h2>Кто я</h2>
+<ul>
+<li>Backend-разработчик и тимлид в компании вебпрактик</li>
+<li>Работаю с PHP и Symfony</li>
+<li>Активно использую AI-инструменты в разработке</li>
+</ul>
+</section>
+
+<section class="slide">
+    <h2 class="shout shrink">90%</h2>
+</section>
+
+<section class="slide">
+<h2>Структура доклада</h2>
+<ol>
+<li>Что такое AI агенты</li>
+<li>Выбор инструментов и моделей</li>
+<li>Подготовка проекта и контекста</li>
+<li>Постановка задачи</li>
+</ol>
+</section>
+
+<section class="slide">
+<h2 class="shout shrink">Что такое AI агенты<br> и как они работают</h2>
+</section>
+<section class="slide">
+    <h2>Структура раздела</h2>
+    <ol>
+        <li>Классификация AI инструментов</li>
+        <li>Что такое агенты</li>
+        <li>Как агенты меняют процесс разработки</li>
+    </ol>
+</section>
+
+<section class="slide">
+    <h2>Эволюция AI инструментов в разработке</h2>
+    <ul>
+        <li class="next"><b>Chat</b> — Обычный чат с AI (ChatGPT, Claude)</li>
+        <li class="next"><b>Autocomplete</b> — Автодополнение кода (Copilot, Codeium)</li>
+        <li class="next"><b>Agents</b> — Агенты для выполнения задач (Claude Code, Cursor)</li>
+        <li class="next"><b>Background agents</b> — Фоновые агенты</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Киллер-фичи агентов</h2>
+    <ul>
+        <li>Видит содержимое папки, в которой запущен</li>
+        <li>Может запускать CLI команды</li>
+        <li>Буквально пишет код вместо тебя</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Агенты != silver bullet</h2>
+    <ul>
+        <li>Требуют хорошей инженерной культуры</li>
+        <li>Подготовки проекта</li>
+        <li>За код и результат ВСЕГДА отвечает человек, а не агент</li>
+        <li>Если агенты не прижились у вас в команде - возможно проблема не в агентах</li>
+    </ul>
+</section>
+
+<section class="slide" style="padding: 0;">
+    <img src="pictures/agent_not_a_wizard.png" alt="" style="height: 100%; width: auto; object-fit: contain; display: block; margin: 0 auto;">
+</section>
+
+<section class="slide">
+    <h2>Разработка с AI агентами != Вайбкодинг</h2>
+    <p><b>Вайбкодинг</b> - пишешь промпты под музыку и лавандовый раф, надеешься что нейронка сгенерирует именно то, о чём ты думаешь</p>
+    <p><b>AI агенты</b> - мощный инструмент. Но с большой силой приходит большая ответственность</p>
+</section>
+
+<section class="slide">
+    <h2>AI агенты - новый подход к написанию кода</h2>
+    <ul>
+        <li>Мы перестаём быть механическими писателями кода</li>
+        <li>Основная задача — качественное формирование требований и ревью результата</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Ты не только разработчик, но и тимлид</h2>
+    <ul>
+        <li class="next">И ты тоже</li>
+        <li class="next">И я</li>
+        <li class="next">И каждый, у кого есть команда из AI агентов</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Задачи те же</h2>
+    <p>Представь, что к тебе приходит новый джун</p>
+    <ul>
+        <li>Он хорошо умеет писать код, но ничего не знает о твоем проекте</li>
+        <li>Без онбординга, понятных инструкций и ревью может (и будет) чудить</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2 class="shout shrink">Выбор инструментов<br>и моделей</h2>
+</section>
+
+<section class="slide">
+    <h2>Структура раздела</h2>
+    <ul>
+        <li>IDE и редакторы кода</li>
+        <li>Плагины</li>
+        <li>CLI</li>
+        <li>Выбор моделей</li>
+    </ul>
+</section>
+
+<section class="slide" style="padding: 0;">
+    <img src="pictures/matrix_pills.jpg" alt="Matrix pills" style="height: 100%; width: auto; object-fit: contain; display: block; margin: 0 auto;">
+</section>
+
+<section class="slide">
+    <h2>IDE и редакторы кода</h2>
+</section>
+
+<section class="slide">
+    <h2>Cursor</h2>
+    <ul>
+        <li>С него начался хайп</li>
+        <li>Слабо адаптирован под PHP</li>
+        <li>Быстро заканчиваются лимиты</li>
+        <li>Агенты - кор функционал</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>PhpStorm</h2>
+    <ul>
+        <li>Опоздал на несколько месяцев</li>
+        <li>Отлично адаптирован под PHP</li>
+        <li>ОЧЕНЬ быстро заканчиваются лимиты</li>
+        <li>Агенты - вспомогательный функционал</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Плагины</h2>
+</section>
+
+<section class="slide">
+    <h2>Было у отца два сына</h2>
+</section>
+
+<section class="slide">
+    <h2>В семье ни без windsurf'a</h2>
+</section>
+
+<section class="slide">
+    <h2>Kilo Code</h2>
+</section>
+
+<section class="slide">
+    <h2>Kilo Code: Ключевые преимущества</h2>
+    <ul>
+        <li>Стабильная работа в PHPStorm</li>
+        <li>Встроенный Memory Bank</li>
+        <li>Широкий выбор AI провайдеров</li>
+        <li>Агенты с ролями</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>OpenRouter</h2>
+</section>
+
+<section class="slide">
+    <h2>CLI</h2>
+</section>
+
+<section class="slide">
+    <h2>Claude Code</h2>
+    <ul>
+        <li>Передовые модели</li>
+        <li>Лучший UX среди CLI</li>
+        <li>Хорошее соотношение лимитов и стоимости</li>
+        <li>Активное развитие, новые фичи</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Qwen Code</h2>
+    <ul>
+        <li>Бесплатно и доступно в РФ</li>
+        <li>Неплохие модели</li>
+        <li>Хороший UX</li>
+        <li>Активное развитие, новые фичи</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Мои рекомендации</h2>
+</section>
+
+<section class="slide">
+    <h2 class="shout">Выбор модели</h2>
+</section>
+
+<section class="slide">
+    <h2>Выбор модели: SWE bench</h2>
+    <table>
+        <tr>
+            <th>Место</th>
+            <th>Модель</th>
+            <th>Процент</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Gemini 3 Pro</td>
+            <td>71.6</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>GPT 5.1 Codex</td>
+            <td>70.4</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Claude Sonnet 4.5 Thinking</td>
+            <td>69.8</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>GPT 5 Codex</td>
+            <td>69.4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Claude Haiku 4.5 Thinking</td>
+            <td>68.8</td>
+        </tr>
+    </table>
+</section>
+
+<section class="slide">
+    <h2>Выбор модели</h2>
+    <p><b>Проприетарные модели:</b></p>
+    <ul>
+        <li>Claude sonnet 4.5</li>
+        <li>GPT-5.1 Codex</li>
+        <li>Gemini 3 Pro</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Выбор модели</h2>
+    <p><b>Опенсорсные модели:</b></p>
+    <ul>
+        <li>GLM 4.6</li>
+        <li>MiniMax 2</li>
+        <li>Qwen 3 coder</li>
+        <li>Kimi k2</li>
+        <li>DeepSeek V3.1</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Мои рекомендации</h2>
+</section>
+
+<section class="slide">
+    <h2 class="shout shrink">Подготовка проекта<br>и контекста</h2>
+</section>
+
+<section class="slide">
+    <h2>Структура раздела</h2>
+    <ul>
+        <li>Agents.md</li>
+        <li>Memory bank</li>
+        <li>MCP</li>
+        <li>Безопасность</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Я не в контексте</h2>
+    <p>И агент тоже. Нужно дать ему весь необходимый контекст</p>
+    <ul>
+        <li>Контекст вашей команды\компании</li>
+        <li>Контекст проекта</li>
+    </ul>
+    <p>Важно - агент помнит НАМНОГО меньше контекста, чем человек. Можно дообучить агента под свой проект и\или команду, но такое доступно только избранным</p>
+</section>
+
+<section class="slide">
+    <h2>Agents.md</h2>
+    <p><b>Это база, это знать надо</b></p>
+    <p>Файл с правилами для агента, которые он добавляет в контекст при каждом запуске</p>
+    <p>Чтоб создать первую итерацию чаще всего достаточно запустить команду init</p>
+    <p>Agents.md - не костанта</p>
+</section>
+
+<section class="slide">
+    <h2>Agents.md</h2>
+    <p><b>Базовый минимум:</b></p>
+    <ul>
+        <li>Основные правила работы агента</li>
+        <li>Краткое описание проекта и стека</li>
+        <li>Кодстайл и прочие стандарты</li>
+    </ul>
+    <p>Даже такая базовая конфигурация даст неплохой буст в плане предсказуемости результата и снизит количество галлюцинаций</p>
+</section>
+
+<section class="slide">
+    <h2>Memory bank</h2>
+    <ul>
+        <li>Следующий шаг в документировании проекта</li>
+        <li>Хорошей практикой будет сразу подготовить промпт для актуализации документации</li>
+        <li>Добавьте информацию о memory bank в agents.md</li>
+        <li>Если ваша база знаний лежит отдельно от кода - не беда, используйте MCP</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>А на русском писать можно?</h2>
+    <p>Можно! А еще лучше - на польском!</p>
+</section>
+
+<section class="slide">
+    <h2>MCP</h2>
+    <p>Важный шаг в подготовке проекта - подключение нужных инструментов</p>
+    <p>На практике MCP — волшебный портал во внешний мир для агента. Можно дать доступ к таск-трекеру и документации, приложениям, актуальной документации</p>
+</section>
+
+<section class="slide">
+    <h2>MCP</h2>
+    <ul>
+        <li>Context 7</li>
+        <li>Browser MCP</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Безопасность на уровне конфигов: .agentignore</h2>
+    <p>Запрети агентам читать энвы, порадуй безопасника хоть немного</p>
+</section>
+
+<section class="slide">
+    <h2>Proxy - на примере Microsoft Presidio</h2>
+</section>
+
+<section class="slide">
+    <h2 class="shout">Постановка задачи</h2>
+</section>
+
+<section class="slide">
+    <h2>Я не в контексте. Опять</h2>
+    <p>Агент теперь в курсе о проекте и ваших стандартах</p>
+    <p>Но без понятия что хочет клиент, что было на созвоне и что дизайнер нарисовал в фигме</p>
+</section>
+
+<section class="slide">
+    <h2>Как НЕ надо ставить задачу агенту</h2>
+    <p><b>"Сделай красиво!"</b></p>
+    <p>После этого промпта в коде начался сущий кошмар</p>
+    <p><b>Вот задача - сделай ее</b></p>
+    <p>Это может работать для старта новый проектов, для прототипирования</p>
+    <p>Не работает на средних и тем более больших проектах</p>
+</section>
+
+<section class="slide">
+    <h2>Жизненный цикл задачи для агента</h2>
+    <ol>
+        <li>Анализируем задачу и проект</li>
+        <li>Разбиваем на небольшие подзадачи (планирование)</li>
+        <li>Прорабатываем план реализации. Тут же появляется спецификация, заготовка документации - в общем много md файликов</li>
+        <li>Проводим ревью плана</li>
+        <li>Пишем код</li>
+        <li>Проводим ревью результата</li>
+    </ol>
+</section>
+
+<section class="slide">
+    <h2 class="shout shrink small">Агента можно и нужно использовать<br>на всех этапах, а не ТОЛЬКО<br>для написания кода</h2>
+</section>
+
+<section class="slide">
+    <h2>Spec-Driven Development</h2>
+    <ul>
+        <li>GitHub Spec Kit</li>
+        <li>OpenSpec</li>
+        <li>Kiro</li>
+        <li>Qoder</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2 class="shout">Выводы</h2>
+</section>
+
+<section class="slide">
+    <h2>Вместо выводов - Gartner Hype Cycle</h2>
+</section>
+
+<section class="slide">
+    <h2 class="shout shrink">Скил работы с AI - это скилл<br>разработчика</h2>
+</section>
+
+<section class="slide">
+    <h2 class="shout">Спасибо за внимание!</h2>
+</section>
+
+<div class="progress"></div>
+<script src="shower/shower.min.js"></script>
+<!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+</body>
+</html>
