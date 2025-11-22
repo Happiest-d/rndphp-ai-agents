@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 550">
+  <defs>
+    <style>
+      .stage-box {
+        fill: #4A90E2;
+        stroke: #2E5C8A;
+        stroke-width: 3;
+        rx: 10;
+      }
+      .stage-title {
+        fill: white;
+        font-family: 'PT Sans', Arial, sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        text-anchor: middle;
+      }
+      .stage-subtitle {
+        fill: white;
+        font-family: 'PT Sans', Arial, sans-serif;
+        font-size: 16px;
+        text-anchor: middle;
+        opacity: 0.9;
+      }
+      .arrow {
+        fill: none;
+        stroke: #34495E;
+        stroke-width: 4;
+        marker-end: url(#arrowhead);
+      }
+      .timeline {
+        fill: none;
+        stroke: #BDC3C7;
+        stroke-width: 3;
+      }
+      .year-label {
+        fill: #7F8C8D;
+        font-family: 'PT Sans', Arial, sans-serif;
+        font-size: 18px;
+        text-anchor: middle;
+      }
+      .number-circle {
+        fill: #34495E;
+        stroke: none;
+      }
+      .number-text {
+        fill: white;
+        font-family: 'PT Sans', Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-anchor: middle;
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#34495E"/>
+    </marker>
+  </defs>
+
+  <!-- Timeline -->
+  <line x1="100" y1="500" x2="1100" y2="500" class="timeline"/>
+
+  <!-- Stage 1: Чат с LLM -->
+  <g>
+    <circle cx="150" cy="100" r="25" class="number-circle"/>
+    <text x="150" y="110" class="number-text">1</text>
+    <rect x="75" y="140" width="150" height="100" class="stage-box"/>
+    <text x="150" y="185" class="stage-title">Чат с LLM</text>
+    <text x="150" y="215" class="stage-subtitle">(ChatGPT)</text>
+    <line x1="150" y1="240" x2="150" y2="500" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="5,5"/>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="225" y1="200" x2="325" y2="200" class="arrow"/>
+
+  <!-- Stage 2: Автодополнение -->
+  <g>
+    <circle cx="425" cy="100" r="25" class="number-circle"/>
+    <text x="425" y="110" class="number-text">2</text>
+    <rect x="325" y="140" width="200" height="100" class="stage-box"/>
+    <text x="425" y="185" class="stage-title">Автодополнение</text>
+    <text x="425" y="215" class="stage-subtitle">(Copilot, Codeium)</text>
+    <line x1="425" y1="240" x2="425" y2="500" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="5,5"/>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="525" y1="200" x2="600" y2="200" class="arrow"/>
+
+  <!-- Stage 3: Агенты -->
+  <g>
+    <circle cx="700" cy="100" r="25" class="number-circle"/>
+    <text x="700" y="110" class="number-text">3</text>
+    <rect x="600" y="140" width="200" height="100" class="stage-box"/>
+    <text x="700" y="185" class="stage-title">Агенты</text>
+    <text x="700" y="215" class="stage-subtitle">(Cursor)</text>
+    <line x1="700" y1="240" x2="700" y2="500" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="5,5"/>
+  </g>
+
+  <!-- Timeline markers -->
+  <g>
+    <circle cx="150" cy="500" r="8" fill="#4A90E2"/>
+    <text x="150" y="535" class="year-label">2022</text>
+  </g>
+  <g>
+    <circle cx="425" cy="500" r="8" fill="#4A90E2"/>
+    <text x="425" y="535" class="year-label">2023</text>
+  </g>
+  <g>
+    <circle cx="700" cy="500" r="8" fill="#4A90E2"/>
+    <text x="700" y="535" class="year-label">2024</text>
+  </g>
+
+</svg>

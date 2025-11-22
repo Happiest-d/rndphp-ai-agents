@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <style>
+      .step-box {
+        fill: #4A90E2;
+        stroke: #2E5C8A;
+        stroke-width: 3;
+        rx: 10;
+      }
+      .step-box-spec {
+        fill: #9B59B6;
+        stroke: #7D3C98;
+        stroke-width: 3;
+        rx: 10;
+      }
+      .step-box-code {
+        fill: #27AE60;
+        stroke: #1E8449;
+        stroke-width: 3;
+        rx: 10;
+      }
+      .step-box-review {
+        fill: #E67E22;
+        stroke: #CA6F1E;
+        stroke-width: 3;
+        rx: 10;
+      }
+      .step-title {
+        fill: white;
+        font-family: 'PT Sans', Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-anchor: middle;
+      }
+      .step-subtitle {
+        fill: white;
+        font-family: 'PT Sans', Arial, sans-serif;
+        font-size: 15px;
+        text-anchor: middle;
+        opacity: 0.95;
+      }
+      .arrow {
+        fill: none;
+        stroke: #34495E;
+        stroke-width: 4;
+        marker-end: url(#arrowhead);
+      }
+      .arrow-back {
+        fill: none;
+        stroke: #E74C3C;
+        stroke-width: 3;
+        stroke-dasharray: 8,4;
+        marker-end: url(#arrowhead-red);
+      }
+      .cycle-label {
+        fill: #E74C3C;
+        font-family: 'PT Sans', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        text-anchor: middle;
+      }
+      .number-circle {
+        fill: #34495E;
+        stroke: none;
+      }
+      .number-text {
+        fill: white;
+        font-family: 'PT Sans', Arial, sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        text-anchor: middle;
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#34495E"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#E74C3C"/>
+    </marker>
+  </defs>
+
+  <!-- Step 1: Задача -->
+  <g>
+    <circle cx="150" cy="80" r="22" class="number-circle"/>
+    <text x="150" y="87" class="number-text">1</text>
+    <rect x="60" y="120" width="180" height="100" class="step-box"/>
+    <text x="150" y="155" class="step-title">Задача</text>
+    <text x="150" y="180" class="step-subtitle">Требования</text>
+    <text x="150" y="202" class="step-subtitle">от заказчика</text>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="240" y1="170" x2="310" y2="170" class="arrow"/>
+
+  <!-- Step 2: Спецификация -->
+  <g>
+    <circle cx="450" cy="80" r="22" class="number-circle"/>
+    <text x="450" y="87" class="number-text">2</text>
+    <rect x="310" y="120" width="280" height="100" class="step-box-spec"/>
+    <text x="450" y="155" class="step-title">Написание спецификации</text>
+    <text x="450" y="180" class="step-subtitle">Детальное описание решения,</text>
+    <text x="450" y="202" class="step-subtitle">архитектура, API, тесты</text>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="590" y1="170" x2="660" y2="170" class="arrow"/>
+
+  <!-- Step 3: Ревью спецификации -->
+  <g>
+    <circle cx="800" cy="80" r="22" class="number-circle"/>
+    <text x="800" y="87" class="number-text">3</text>
+    <rect x="660" y="120" width="280" height="100" class="step-box-review"/>
+    <text x="800" y="155" class="step-title">Ревью спецификации</text>
+    <text x="800" y="180" class="step-subtitle">Проверка требований,</text>
+    <text x="800" y="202" class="step-subtitle">согласование подхода</text>
+  </g>
+
+  <!-- Arrow back from 3 to 2 (if changes needed) -->
+  <path d="M 680,240 Q 450,280 590,200" class="arrow-back"/>
+  <text x="540" y="270" class="cycle-label">Правки</text>
+
+  <!-- Arrow 3 to 4 -->
+  <line x1="800" y1="220" x2="800" y2="290" class="arrow"/>
+
+  <!-- Step 4: Реализация -->
+  <g>
+    <circle cx="800" cy="350" r="22" class="number-circle"/>
+    <text x="800" y="357" class="number-text">4</text>
+    <rect x="660" y="390" width="280" height="100" class="step-box-code"/>
+    <text x="800" y="425" class="step-title">Реализация кода</text>
+    <text x="800" y="450" class="step-subtitle">AI генерирует код</text>
+    <text x="800" y="472" class="step-subtitle">на основе спецификации</text>
+  </g>
+
+  <!-- Arrow 4 to 5 -->
+  <line x1="660" y1="440" x2="590" y2="440" class="arrow"/>
+
+  <!-- Step 5: Тестирование -->
+  <g>
+    <circle cx="450" cy="350" r="22" class="number-circle"/>
+    <text x="450" y="357" class="number-text">5</text>
+    <rect x="310" y="390" width="280" height="100" class="step-box-code"/>
+    <text x="450" y="425" class="step-title">Тестирование</text>
+    <text x="450" y="450" class="step-subtitle">Запуск тестов,</text>
+    <text x="450" y="472" class="step-subtitle">проверка требований</text>
+  </g>
+
+  <!-- Arrow 5 to 6 -->
+  <line x1="310" y1="440" x2="240" y2="440" class="arrow"/>
+
+  <!-- Step 6: Ревью кода -->
+  <g>
+    <circle cx="150" cy="350" r="22" class="number-circle"/>
+    <text x="150" y="357" class="number-text">6</text>
+    <rect x="60" y="390" width="180" height="100" class="step-box-review"/>
+    <text x="150" y="425" class="step-title">Ревью кода</text>
+    <text x="150" y="450" class="step-subtitle">Проверка</text>
+    <text x="150" y="472" class="step-subtitle">качества</text>
+  </g>
+
+  <!-- Arrow back from 6 to 4 (if changes needed) -->
+  <path d="M 150,500 Q 150,550 800,520 L 800,490" class="arrow-back"/>
+  <text x="480" y="570" class="cycle-label">Доработки</text>
+
+  <!-- Success arrow -->
+  <line x1="60" y1="440" x2="20" y2="440" class="arrow"/>
+  <circle cx="20" cy="440" r="15" fill="#27AE60" stroke="#1E8449" stroke-width="3"/>
+  <text x="20" y="447" style="fill: white; font-size: 20px; font-weight: bold; text-anchor: middle;">✓</text>
+
+</svg>
